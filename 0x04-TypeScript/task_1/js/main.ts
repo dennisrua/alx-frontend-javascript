@@ -31,3 +31,18 @@ console.log(teacher3);
 //   location: "London",
 //   contract: false
 // }
+
+// This describes a function that accepts (firstName: string, lastName: string) and returns a string
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+// Implement the function printTeacher following the interface
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  // Take the first letter of firstName, add a dot, then the full lastName
+  return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+// Example usage of printTeacher
+console.log(printTeacher('John', 'Doe')); // Output: "J. Doe"
+console.log(printTeacher('Mary', 'Smith')); // Output: "M. Smith"
