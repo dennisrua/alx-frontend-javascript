@@ -62,6 +62,7 @@ function executeWork(employee: Director | Teacher): string {
 }
 
 // 7. String literal types
+// todayClass:Subjects
 type Subjects = 'Math' | 'History';
 
 function teachClass(todayClass: Subjects): string {
