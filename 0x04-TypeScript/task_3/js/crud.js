@@ -14,4 +14,19 @@ export function updateRow(rowId, row) {
   return rowId;
 }
 
-// declare function insertRow(row: RowElement): number", "declare function deleteRow(rowId: RowID): void", "declare function updateRow(rowId: RowID, row: RowElement): RowID
+// task_3/js/crud.d.ts
+
+// Define the RowID type as a number
+// type RowID = number;
+
+// Define the RowElement interface
+// interface RowElement {
+// firstName: string;
+// lastName: string;
+// age: number;
+// }
+
+// Declare the 3 functions using RowID and RowElement
+// declare function insertRow(row: RowElement): number;
+// declare function deleteRow(rowId: RowID): void;
+// declare function updateRow(rowId: RowID, row: RowElement): RowID;
