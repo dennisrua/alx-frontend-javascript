@@ -38,6 +38,7 @@ interface printTeacherFunction {
 }
 
 // Implement the function with destructuring
+// function printTeacher
 const printTeacher: printTeacherFunction = ({
   firstName,
   lastName,
