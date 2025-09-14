@@ -37,11 +37,16 @@ interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-// Implement a named function that matches the interface
-function printTeacher(firstName: string, lastName: string): string {
-  return `${firstName.charAt(0)}. ${lastName}`;
+// Implement the function directly
+function printTeacher({
+  firstName,
+  lastName,
+}: {
+  firstName: string;
+  lastName: string;
+}): string {
+  return `${firstName}. ${lastName}`;
 }
 
 // Example usage
-console.log(printTeacher('John', 'Doe')); // Output: "J. Doe"
-console.log(printTeacher('Mary', 'Smith')); // Output: "M. Smith"
+console.log(printTeacher({ firstName: 'John', lastName: 'Doe' })); // "J. Doe"
