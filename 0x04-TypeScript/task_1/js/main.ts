@@ -32,21 +32,20 @@ console.log(teacher3);
 //   contract: false
 // }
 
-// This describes a function that accepts (firstName: string, lastName: string) and returns a string
+// Define an interface for the function
 interface printTeacherFunction {
-  (firstName: string, lastName: string): string;
+  ({ firstName, lastName }: { firstName: string; lastName: string }): string;
 }
 
 // Implement the function with destructuring
-function printTeacher({
+const printTeacher: printTeacherFunction = ({
   firstName,
   lastName,
 }: {
   firstName: string;
   lastName: string;
-}): string {
+}): string => {
   return `${firstName}. ${lastName}`;
-}
+};
 
-// Example usage
-console.log(printTeacher({ firstName: 'John', lastName: 'Doe' })); // "J. Doe"
+console.log(printTeacher({ firstName: 'John', lastName: 'Doe' })); // J. Doe
