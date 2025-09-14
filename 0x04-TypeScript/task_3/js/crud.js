@@ -13,3 +13,5 @@ export function updateRow(rowId, row) {
   console.log(`Update row ${rowId}`, row);
   return rowId;
 }
+
+// declare function insertRow(row: RowElement): number", "declare function deleteRow(rowId: RowID): void", "declare function updateRow(rowId: RowID, row: RowElement): RowID
